@@ -5,6 +5,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Aboutus from "./components/Aboutus";
 import Signup from "./components/Signup";
+import Users from "./components/User";
+import Login from "./components/Login";
+import Slider from "./components/Slider";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -13,6 +16,9 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Route path="/" element={<App />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/slider" element={<Slider />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

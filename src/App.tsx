@@ -1,26 +1,24 @@
 import Footer from "./compoundComponents/Footer";
 import Navbar from "./compoundComponents/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "react-bootstrap";
 
 function App() {
-  //react hooks
-  const [count, setCount] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    window.addEventListener("resize", function () {
+      setWidth(window.innerWidth);
+    });
+  });
 
   return (
     <div>
       <Navbar />
-      <h1>
-        You have clicked the button <span className="text-muted">{count}</span>{" "}
-        number of time{" "}
-      </h1>
-      <Button
-        onClick={() => setCount(count + 1)}
-        className="mx-5 my-5"
-        variant="success"
-      >
-        Increase Count
-      </Button>
+      <section className="text-center">
+        <h1>Winow Screen size</h1>
+        <h1>{`${width} px`}</h1>
+      </section>
       <Footer />
     </div>
   );
