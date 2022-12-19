@@ -43,6 +43,11 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/color">
+                  Color
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/signup">
                   Signup
                 </Link>
