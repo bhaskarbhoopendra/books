@@ -1,0 +1,30 @@
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.article{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.edit-icon{
+    font-size: 25px;
+    color: green;
+    padding:0% 2%;
+}
+
+.delete-icon{
+    font-size: 25px;
+    color: brown;
+    padding: 0% 2%;
+}
+
+.delete-icon:hover{
+    cursor: pointer;
+}
+
+.edit-icon:hover{
+    cursor: pointer;
+}

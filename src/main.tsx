@@ -9,6 +9,7 @@ import Users from "./components/User";
 import Login from "./components/Login";
 import Slider from "./components/Slider";
 import Color from "./components/Color";
+import Grocer from "./components/Grocer";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
@@ -21,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
         <Route path="/login" element={<Login />} />
         <Route path="/slider" element={<Slider />} />
         <Route path="/color" element={<Color />} />
+        <Route path="/grocer" element={<Grocer />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

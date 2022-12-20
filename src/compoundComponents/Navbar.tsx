@@ -48,6 +48,11 @@ function Navbar() {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" to="/grocery">
+                  Grocery
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" to="/signup">
                   Signup
                 </Link>
@@ -55,6 +60,11 @@ function Navbar() {
               <li className="nav-item">
                 <Link className="nav-link" to="/login">
                   Login
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/grocer">
+                  Grocer
                 </Link>
               </li>
             </ul>
