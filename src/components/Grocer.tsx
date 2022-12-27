@@ -3,6 +3,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import Navbar from "../compoundComponents/Navbar";
 import { FaPenSquare, FaTrash } from "react-icons/fa";
 import "./grocery.css";
+import { useShopping } from "../context/Context";
 
 const getLocalstorage = () => {
   const list = localStorage.getItem("list");
@@ -18,6 +19,9 @@ function Grocer() {
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(0);
   console.log({ editId, isEditing });
+
+  const { cart }: any = useShopping();
+  console.log({ cart });
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
